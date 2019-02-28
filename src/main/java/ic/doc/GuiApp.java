@@ -3,7 +3,7 @@ package ic.doc;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GUI {
+public class GuiApp {
   private ViewReversePolishCalculator viewReversePolishCalculator =
       new ViewReversePolishCalculator(new NumberController(), new OperationController());
   private ReversePolishCalculator reversePolishCalculator =
@@ -45,11 +45,13 @@ public class GUI {
         reversePolishCalculator.adding();
       }
 
-      if (value == "-") reversePolishCalculator.subtracting();
+      if (value == "-") {
+        reversePolishCalculator.subtracting();
+      }
     }
   }
 
   public static void main(String args[]) {
-    new GUI();
+    new GuiApp();
   }
 }
