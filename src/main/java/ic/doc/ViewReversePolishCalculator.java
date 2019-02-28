@@ -48,4 +48,3 @@ public class ViewReversePolishCalculator implements Updatable {
     textField.setText(value);
   }
 }
-

@@ -2,18 +2,18 @@ package ic.doc;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
+
 import org.jmock.Expectations;
+import org.jmock.integration.junit4.JUnitRuleMockery;
 import org.junit.Rule;
 import org.junit.Test;
-import org.jmock.integration.junit4.JUnitRuleMockery;
-import java.util.Stack;
 
 public class ReversePolishCalculatorTest {
 
-  @Rule
-  public JUnitRuleMockery context = new JUnitRuleMockery();
+  @Rule public JUnitRuleMockery context = new JUnitRuleMockery();
   private final Updatable viewReversePolishCalculator = context.mock(Updatable.class);
-  private final ReversePolishCalculator reversePolishCalculator = new ReversePolishCalculator(viewReversePolishCalculator);
+  private final ReversePolishCalculator reversePolishCalculator =
+      new ReversePolishCalculator(viewReversePolishCalculator);
 
   @Test
   public void addAnElementToStack() {
@@ -57,5 +57,4 @@ public class ReversePolishCalculatorTest {
     reversePolishCalculator.subtracting();
     assertThat(reversePolishCalculator.stack.empty(), is(true));
   }
-
 }
