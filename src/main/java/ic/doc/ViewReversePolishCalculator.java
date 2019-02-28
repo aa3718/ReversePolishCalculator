@@ -49,15 +49,3 @@ public class ViewReversePolishCalculator {
   }
 }
 
-//    one.addActionListener(new ActionListener() {
-//      @Override
-//      public void actionPerformed(ActionEvent actionEvent) {
-//        // whatever you want to do with this
-//      }
-//    });
-
-// for each .. do this or that
-
-// one....
-// two. ...
-// for numbers from 1 to 9 do this
