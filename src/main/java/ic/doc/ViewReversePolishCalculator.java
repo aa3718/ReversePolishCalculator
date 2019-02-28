@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class ViewReversePolishCalculator {
+public class ViewReversePolishCalculator implements Updatable {
 
   public final JButton one = new JButton("1");
   public final JButton two = new JButton("2");

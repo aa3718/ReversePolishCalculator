@@ -4,10 +4,10 @@ import java.util.Stack;
 
 public class ReversePolishCalculator {
 
-  private final Stack stack = new Stack();
-  private ViewReversePolishCalculator viewReversePolishCalculator;
+  public final Stack stack = new Stack();
+  public final Updatable viewReversePolishCalculator;
 
-  public ReversePolishCalculator(ViewReversePolishCalculator viewReversePolishCalculator) {
+  public ReversePolishCalculator(Updatable viewReversePolishCalculator) {
     this.viewReversePolishCalculator = viewReversePolishCalculator;
   }
 
