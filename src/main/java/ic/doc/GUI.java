@@ -15,7 +15,6 @@ public class GUI {
     public void actionPerformed(ActionEvent actionEvent) {
 
       String value = actionEvent.getActionCommand();
-      System.out.println(value);
 
       if (value == "1") {
         reversePolishCalculator.addStack(1);
@@ -46,15 +45,11 @@ public class GUI {
         reversePolishCalculator.adding();
       }
 
-      if (value == "-")
-        reversePolishCalculator.subtracting();
+      if (value == "-") reversePolishCalculator.subtracting();
     }
   }
 
   public static void main(String args[]) {
-    // View (or alternatively View(Controller)
-    // Model(View)
     new GUI();
   }
-
 }

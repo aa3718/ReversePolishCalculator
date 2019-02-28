@@ -1,7 +1,10 @@
 package ic.doc;
 
 import java.awt.event.ActionListener;
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class ViewReversePolishCalculator {
 
@@ -13,7 +16,8 @@ public class ViewReversePolishCalculator {
   public final JButton subtraction = new JButton("-");
   public final JTextField textField = new JTextField(10);
 
-  public ViewReversePolishCalculator(ActionListener numberController, ActionListener operationController) {
+  public ViewReversePolishCalculator(
+      ActionListener numberController, ActionListener operationController) {
 
     JFrame frame = new JFrame("Reverse Polish Calculator");
     frame.setSize(300, 200);
@@ -38,15 +42,11 @@ public class ViewReversePolishCalculator {
     frame.getContentPane().add(panel);
     frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
     frame.setVisible(true);
-
-
   }
 
   public void updateView(String value) {
     textField.setText(value);
   }
-
-
 }
 
 //    one.addActionListener(new ActionListener() {
@@ -59,5 +59,5 @@ public class ViewReversePolishCalculator {
 // for each .. do this or that
 
 // one....
-//two. ...
+// two. ...
 // for numbers from 1 to 9 do this

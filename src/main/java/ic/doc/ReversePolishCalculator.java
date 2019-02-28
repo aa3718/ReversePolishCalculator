@@ -1,7 +1,6 @@
 package ic.doc;
 
 import java.util.Stack;
-import javax.swing.*;
 
 public class ReversePolishCalculator {
 
@@ -13,7 +12,6 @@ public class ReversePolishCalculator {
   }
 
   public void addStack(int number) {
-    System.out.println("add");
     stack.push(number);
     viewReversePolishCalculator.updateView(String.valueOf(number));
   }
@@ -23,7 +21,6 @@ public class ReversePolishCalculator {
     int second = (int) stack.pop();
     int result = first + second;
     stack.empty();
-    System.out.println("here");
     viewReversePolishCalculator.updateView(String.valueOf(result));
   }
 
@@ -34,7 +31,4 @@ public class ReversePolishCalculator {
     stack.empty();
     viewReversePolishCalculator.updateView(String.valueOf(result));
   }
-
 }
-
-
